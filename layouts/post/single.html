@@ -1,0 +1,24 @@
+{{ template "theme/persona/partial/header.html" . }}
+<body vocab="http://schema.org/" typeof="WebPage">
+{{ template "theme/persona/partial/navbar.html" . }}
+  <div class="main_content_area">
+    <div id="expand_content_menu"><span class="icon icon-fontawesome-webfont-1"></span></div>
+    <div id="body_hover"></div>
+{{ template "theme/persona/partial/profile_heading.html" . }}
+    <section class="home_page_post_area single_page_post_area">
+      <div class="container">
+        <div class="row">
+        <div class="col-md-12">
+            <div class="home_single_post">
+{{ template "post/image_area.html" . }}
+{{ template "post/single_content_area.html" . }}
+{{ template "theme/persona/partial/profile_bottom.html" . }}
+{{ template "post/disqus_area.html" . }}
+            </div>
+
+{{ template "post/single_pagination.html" . }}
+          </div>
+        </div>
+    </section>
+  </div>
+{{ template "theme/persona/partial/footer.html" . }}

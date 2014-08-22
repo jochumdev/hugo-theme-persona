@@ -1,0 +1,21 @@
+                <aside class="row post_info">
+                  {{ if isset .Params "tags" }}
+                  <div class="col-md-12">
+                    <ul class="tags" property="keywords">
+                      {{ range .Params.tags }}<li><a href="/tags/{{ . | urlize }}">{{ . }}</a></li>{{ end }}
+                    </ul>
+                  </div>
+                  {{ end }}
+                  <div class="col-md-8">
+                    <div class="date_area">
+                      <time property="datePublished" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 Jan, 2006" }}</time>
+                      <a href="{{ .Permalink }}#disqus_thread" property="commentCount">33 Comments</a>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="replay_area">
+                      <a href="#" class="icon-export"></a>
+                      <a href="#" class="icon-heart"></a>
+                    </div>
+                  </div>
+                </aside>

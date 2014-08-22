@@ -1,0 +1,27 @@
+{{ template "theme/partials/header.html" . }}
+<body vocab="http://schema.org/" typeof="WebPage">
+{{ template "theme/partials/navbar.html" . }}
+  <div class="main_content_area">
+    <div id="expand_content_menu"><span class="icon icon-fontawesome-webfont-1"></span></div>
+    <div id="body_hover"></div>
+{{ template "theme/partials/profile_heading.html" . }}
+    <section class="home_page_post_area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+        {{ range first 10 .Site.Recent }}
+            {{ .Render "summary" }}
+        {{ end }}
+          <div class="paginatin_area">
+            <ul>
+              <li class="active"><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#"  class="p_arrow"><i>&rsaquo;</i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+{{ template "theme/partials/footer.html" . }}
