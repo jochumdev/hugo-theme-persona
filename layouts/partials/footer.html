@@ -1,7 +1,19 @@
 
-  <script type="text/javascript" src="{{ .Site.BaseUrl }}/js/thirdparties.js"></script>
-  <script type="text/javascript" src="{{ .Site.BaseUrl }}/js/jquery.js"></script>
-  <script type="text/javascript" src="{{ .Site.BaseUrl }}/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="{{ .Site.BaseUrl }}/js/main.js"></script>
+  <script type="text/javascript" src="{{ .Site.BaseUrl }}/static/js/thirdparties.js"></script>
+  <script type="text/javascript" src="{{ .Site.BaseUrl }}/static/js/jquery.min.js"></script>
+
+  <script type="text/javascript" src="{{ .Site.BaseUrl }}/static/js/lightGallery.min.js"></script>
+  <script type="text/javascript" src="{{ .Site.BaseUrl }}/static/js/jquery.lightSlider.min.js"></script>
+
+  <script type="text/javascript" src="{{ .Site.BaseUrl }}/static/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="{{ .Site.BaseUrl }}/static/js/main.js"></script>
+
+  <script type="text/javascript" src="{{ .Site.BaseUrl }}/static/js/highlight.pack.js"></script>
+  <script>
+    hljs.configure({
+      languages: ['bash', 'html']
+    });
+    hljs.initHighlightingOnLoad();
+  </script>
 </body>
 </html>
