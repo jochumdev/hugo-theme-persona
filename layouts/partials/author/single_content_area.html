@@ -6,7 +6,8 @@
                         <div class="col-md-8">
                           <h2 property="headline">{{ .Title }}</h2>
                           <small>{{ .Params.address }}, <a href="mailto:{{ .Params.email }}">{{ .Params.email }}</a><br />
-                          Phone: {{ .Params.phone }}</small>
+                          Phone: {{ .Params.phone }}<br/>
+                          PGP:&nbsp;<a href="{{ .Params.pgppubfile }}">{{ .Params.pgp }}</a></small>
                           {{ if .Description }}
                           <h3 property="alternativeHeadline"><small>{{ .Description | safeHtml }}</small></h3>
                           {{ end }}
