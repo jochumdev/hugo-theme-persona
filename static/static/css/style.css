@@ -82,11 +82,11 @@ a:focus, a:active{
   padding-top: 100px;
   text-align: center;
 }
-.profile_area .profile_inner{}
-.profile_area .profile_picture{
+.profile_inner{}
+.profile_picture{
   text-align:center;
 }
-.profile_area .profile_picture a{
+.profile_picture a{
   border: 1px solid #f3f3f3;
   border-radius: 50%;
   display: inline-block;
@@ -97,7 +97,7 @@ a:focus, a:active{
   -moz-transition:all .4s;
   transition:all .4s;
 }
-.profile_area .profile_picture a img{
+.profile_picture a img{
   border-radius: 50%;
   display: inline-block;
   height: 120px;
@@ -106,17 +106,17 @@ a:focus, a:active{
   width: 120px;
 
 }
-.profile_area .profile_picture a:hover{
+.profile_picture a:hover{
   opacity:.8;
 }
-.profile_area .profile_inner{
+.profile_inner{
   border-bottom: 1px solid #ebebeb;
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
   padding: 0 0 67px 0;
 }
-.profile_area .profile_inner h2{
+.profile_inner h2{
   font-family: 'Lato',sans-serif;
   font-size: 50px;
   font-weight: 900;
@@ -130,17 +130,17 @@ a:focus, a:active{
   -moz-transition:all .4s;
   transition:all .4s;
 }
-.profile_area .profile_inner h2:hover{
+.profile_inner h2:hover{
   opacity:.8;
 }
-.profile_area .profile_inner h2 a{
+.profile_inner h2 a{
   display:inline-block;
   margin:0;
   padding:0;
   text-decoration:none;
   color:#262626;
 }
-.profile_area .profile_inner p{
+.profile_inner p{
   color: #777777;
   font-family: 'Noto Serif',serif;
   font-size: 19px;
@@ -149,13 +149,13 @@ a:focus, a:active{
   margin: 0;
   padding: 0;
 }
-.profile_area .profile_inner .social_icon{
+.profile_inner .social_icon{
   margin: 26px 0 0 0;
   padding: 0;
   text-align: center;
   display: block;
 }
-.profile_area .profile_inner .social_icon a{
+.profile_inner .social_icon a{
   display: inline-block;
   font-size: 24px;
   color:rgba(125, 125, 125,.8);
@@ -164,10 +164,10 @@ a:focus, a:active{
   line-height: 24px;
   text-decoration:none;
 }
-.profile_area .profile_inner .social_icon a+a{
+.profile_inner .social_icon a+a{
   margin-left: 13px;
 }
-.profile_area .profile_inner .social_icon a:hover{
+.profile_inner .social_icon a:hover{
   color: rgb(125, 125, 125);
 }
 .home_page_post_area{}
