@@ -4,15 +4,15 @@
     <ul>
         <li
         {{ if not $pag.HasPrev }}class="disabled"{{ end }}>
-        <a href="{{ if $pag.HasPrev }}{{ $pag.Prev.Url }}{{ end }}"  class="p_arrow"><i>&lsaquo;</i></a>
+        <a href="{{ if $pag.HasPrev }}{{ $pag.Prev.URL }}{{ end }}"  class="p_arrow"><i>&lsaquo;</i></a>
         </li>
         {{ range $pag.Pagers }}
         <li
-        {{ if eq . $pag }}class="active"{{ end }}><a href="{{ .Url }}">{{ .PageNumber }}</a></li>
+        {{ if eq . $pag }}class="active"{{ end }}><a href="{{ .URL }}">{{ .PageNumber }}</a></li>
         {{ end }}
         <li
         {{ if not $pag.HasNext }}class="disabled"{{ end }}>
-        <a href="{{ if $pag.HasNext }}{{ $pag.Next.Url }}{{ end }}"  class="p_arrow"><i>&rsaquo;</i></a>
+        <a href="{{ if $pag.HasNext }}{{ $pag.Next.URL }}{{ end }}"  class="p_arrow"><i>&rsaquo;</i></a>
         </li>
     </ul>
 </div>

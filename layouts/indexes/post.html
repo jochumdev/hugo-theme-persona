@@ -1,5 +1,5 @@
 {{ partial "header.html" . }}
-<body>
+<body vocab="http://schema.org/" typeof="WebPage">
 {{ partial "navbar.html" . }}
 <div class="container">
     <div class="row">
@@ -8,7 +8,7 @@
                 <strong>Blog Post Archive</strong>
                 <ul class="list-unstyled">
                     {{ range .Data.Pages }}
-                        {{ .Render "li" }}
+                        {{ .Render "list" }}
                     {{ end}}
                 </ul>
             </div>
@@ -19,6 +19,5 @@
         {{ partial "menu.html" . }}
         </div>
     </div>
-{{ partial "footer.copyright.html" . }}
 </div>
 {{ partial "footer.html" . }}
