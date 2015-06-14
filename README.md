@@ -8,7 +8,7 @@ It's a two column theme.
 # Screenshots
 
 ## Index Page
-![index](/images/screenshot.png)
+![index](/images/snapshot.png)
 
 ## Post Page
 ![index](/images/tn.png)
