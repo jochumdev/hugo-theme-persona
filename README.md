@@ -2,3 +2,16 @@ hugo-theme-persona
 ==================
 
 Port of the clean and well-readable Persona theme to Hugo static site generator.
+Original made by @aries1980 ?
+It's a two column theme. 
+
+# Screenshots
+
+## Index Page
+![index](/images/screenshot.png)
+
+## Post Page
+![index](/images/tn.png)
+
+# License
+Open sourced under the MIT license.
