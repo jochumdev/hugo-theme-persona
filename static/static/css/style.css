@@ -523,7 +523,6 @@ aside.post_info .vcard_area li.tags a:first-child:before {
   color: #777777;
   font-family: 'noto serif';
   font-size: 17px;
-  line-height: 35px;
   margin: 0;
   padding: 7px 20px;
   /* display:block; */
@@ -1008,14 +1007,17 @@ aside.post_info .vcard_area li.tags a:first-child:before {
   margin: 0 20px 6px 20px;
   overflow: visible;
 }
-.single_page_post_area .home_single_post  .post_content_area .single_post_content ul li{
+.single_post_content ul li,
+.single_post_content ol li,
+.single_post_summary ul li,
+.single_post_summary ol li{
   background: none repeat scroll 0 0 transparent;
   color: #777;
   font-family: noto serif;
   font-size: 19px;
   font-style: italic;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 24px;
   margin: 0;
   padding:0;
 }
@@ -1542,3 +1544,14 @@ aside.post_info .vcard_area li.tags a:first-child:before {
   /* color: #337AB7; */
   opacity:.8;
 }
+
+/* .single_post_content ol,
+.single_post_summary ol {
+  color: #777;
+  /* font-family: "Noto Serif",serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 0px;
+  padding: 20px 0px;
+} */
